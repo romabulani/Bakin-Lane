@@ -5,14 +5,29 @@
 @import url(src/shared/globalbakin.css);
 
 .hero-container{
-    background-color: var(--bg-grey);
+    background-image: url('/src/images/bgheroimg.png');
+    display: flex;
+    flex-grow: 1;
     height: fit-content;
+    justify-content: space-around;
     padding-bottom: 1rem;
+    padding: 1rem;
 }
 
-.hero-img{
-    max-height: 80%;
-    width: 100%;
+.hero-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.hero-img > img{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 8px solid var(--light-color);
+    height: 20rem;
+    width: 20rem;
 }
 
 .container-main{
@@ -50,4 +65,38 @@
 .card-text-overlay > .card-img > .card-header{
     font-size: 1.5rem;
     top: 50%;
+}
+
+.btn-primary{
+    height: 3rem;
+}
+
+@media only screen and (max-width : 768px) {
+    .hero-img > img{
+        height: 15rem;
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .hero-img > img{
+        height: 12rem;
+        width: 12rem;
+    }
+    .heading2{
+        font-size: 1.5rem;
+    }
+    .heading4{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .hero-container{
+        flex-direction: column;
+    }
+    .hero-img{
+        align-self: center;
+        order: -1;
+    }
 }
