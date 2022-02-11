@@ -27,7 +27,6 @@
     aspect-ratio: 1/1;
     border-radius: 50%;
     border: 8px solid var(--light-color);
-    height: 20rem;
     width: 20rem;
 }
 
@@ -44,6 +43,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.card{
+    height: fit-content;
+    width: 11rem;
 }
 
 .zoom {
@@ -63,9 +67,24 @@
     background-color: var(--primary-color);
 }
 
-.card-text-overlay > .card-img > .card-header{
+.card-img-container{
+    height: 10rem;
+    position: relative;
+}
+
+.card-img-container > .card-header{
     font-size: 1.5rem;
+}
+
+.card-text-overlay > .card-img-container > .card-header{
     top: 50%;
+}
+
+.card-img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 100%;
+    width: 100%;
 }
 
 .btn-primary{
@@ -73,14 +92,14 @@
 }
 
 @media only screen and (max-width : 768px) {
-    .hero-img > img{
+    .hero-img{
         height: 15rem;
         width: 15rem;
     }
 }
 
 @media only screen and (max-width : 640px) {
-    .hero-img > img{
+    .hero-img{
         height: 12rem;
         width: 12rem;
     }
