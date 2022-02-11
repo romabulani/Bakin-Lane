@@ -1,0 +1,53 @@
+@import url(src/shared/shared.css);
+@import url(src/shared/footer.css);
+@import url(src/shared/nav.css);
+@import url(src/shared/reset.css);
+@import url(src/shared/globalbakin.css);
+
+.hero-container{
+    background-color: var(--bg-grey);
+    height: fit-content;
+    padding-bottom: 1rem;
+}
+
+.hero-img{
+    max-height: 80%;
+    width: 100%;
+}
+
+.container-main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+.cards{
+    column-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.zoom {
+    transition: transform 1s;
+}
+
+.zoom:hover{
+    transform: scale(1.1);
+}
+
+.container-main > .heading3{
+    border-bottom: 2px solid var(--primary-color);
+    padding: 0 2rem;
+}
+
+.card-badge{
+    background-color: var(--primary-color);
+}
+
+.card-text-overlay > .card-img > .card-header{
+    font-size: 1.5rem;
+    top: 50%;
+}

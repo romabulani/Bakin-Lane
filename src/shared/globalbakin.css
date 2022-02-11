@@ -1,0 +1,25 @@
+:root{
+    --bg-grey : #e0e0e0;
+}
+
+.pagewrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.keyword{
+    color: var(--primary-color);
+}
+
+.card{
+    height: fit-content;
+}
+
+.card-default > .card-buttons{
+    padding-top: 0;
+}
+
+.content-container{
+    flex-grow: 1;
+}

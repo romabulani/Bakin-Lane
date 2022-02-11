@@ -5,9 +5,210 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bakin Lane | Home </title>
+    <link rel="stylesheet" href="https://muffinui.netlify.app/style.css">   
     <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/c89017add5.js" crossorigin="anonymous"></script>
+    <!-- added for icon in browser tab -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    
+    <div class="pagewrapper">
+
+        <!-- HEADER NAVIGATION -->
+       <nav class="nav-container">
+           <div class="brand">
+               <img src="/src/images/logo.png" alt="muffin-logo" class="logo">
+               <a href="../index.html"  class="brand-name">Bakin Lane</a>
+               <a href="../index.html"  class="nav-active nav-item">Home</a>
+               <a href=""  class="nav-item">Buy Now</a>
+           </div> 
+           <ul>
+               <div class="searchbar-container">
+                    <button class="nav-search-button">
+                        <i class="fa fa-solid fa-search"></i>
+                    </button>
+                    <input type="text" placeholder="Type to search" class="nav-search-field">
+               </div>
+               <li class="nav-item nav-icon ">
+                    <a href="">
+                        <i class="fa fa-solid fa-search nav-icon"></i>
+                    </a>
+                </li>
+               <li class="nav-item nav-icon ">
+                   <a href="">
+                    <i class="fa fa-solid fa-heart nav-icon"></i>
+                   </a>
+               </li>
+               <li class="nav-item nav-icon">
+                    <a href="">
+                        <i class="fas fa-shopping-cart nav-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item nav-icon ">
+                    <a href="">
+                     <i class="fa fa-solid fa-user nav-icon"></i>
+                    </a>
+                </li>
+           </ul>
+       </nav>
+
+       <!-- MIDDLE SECTION STARTS-->
+
+       <!-- HERO SECTION -->
+       <div class="hero-container">
+           <img class="hero-img img-responsive" src="src/images/heroimg.png" alt="hero-image">
+           <div class="hero-content flex-column-center">
+               <h2 class="heading2 brand-name">Bakin Lane</h2>
+               <h5 class="heading5 keyword">Every occasion deserves a cake!</h5>
+           </div>
+       </div>
+
+       <!-- CARDS SECTION -->
+       <div class="container-main">
+           <h3 class="align-center heading3">Trending</h3>
+           <div class="cards">
+            <div class="card card-default zoom">
+                <div class="card-img ">
+                    <img src="/src/images/cake1.jpg" class="img-responsive" alt="cake">
+                </div>
+                <div class="card-header">
+                    Unicorn Cake
+                </div>
+                <div class="card-title">
+                    Rs 1000
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart-o fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="card card-default zoom">
+                <span class="card-badge">20% Off</span>
+                <div class="card-img ">
+                    <img src="/src/images/cake3.jpg" class="img-responsive" alt="cake">
+                </div>
+                <div class="card-header">
+                   Belgian Muffin
+                </div>
+                <div class="card-title">
+                    Rs 200 / pc
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart-o fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="card card-default zoom">
+                <div class="card-img">
+                    <img src="/src/images/cake2.jpg" class="img-responsive" alt="cake">
+                </div>
+                <div class="card-header">
+                    Vanlate Cake
+                </div>
+                <div class="card-title">
+                    Rs 800
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart-o fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="card card-default zoom">
+                <div class="card-img ">
+                    <img src="/src/images/cake4.jpg" class="img-responsive" alt="cake">
+                </div>
+                <div class="card-header">
+                    Red Velvet Muffin
+                </div>
+                <div class="card-title">
+                    Rs 150 / pc
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart-o fa-lg"></i>
+                </div>
+            </div>
+           </div>
+       </div>
+
+       <div class="container-main">
+        <h3 class="align-center heading3">Featured Categories</h3>
+        <div class="cards">
+            <div class="card card-text-overlay zoom">    
+                <div class="card-img">
+                    <img src="/src/images/festivecake1.jpg" alt="cake">
+                    <div class="card-header">
+                        Festive
+                    </div>
+                </div>   
+            </div>
+
+            <div class="card card-text-overlay zoom">    
+                <div class="card-img">
+                    <img src="/src/images/themecake1.jpg" alt="cake">
+                    <div class="card-header">
+                        Theme
+                    </div>
+                </div>   
+            </div>
+
+            <div class="card card-text-overlay zoom">    
+                <div class="card-img">
+                    <img src="/src/images/occasioncake1.jpg" alt="cake">
+                    <div class="card-header">
+                        Occasion
+                    </div>
+                </div>   
+            </div>
+
+            <div class="card card-text-overlay zoom">    
+                <div class="card-img">
+                    <img src="/src/images/flavorcake1.jpg" alt="cake">
+                    <div class="card-header">
+                        Flavors
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+       <!-- MIDDLE SECTION ENDS-->
+       
+       <!-- FOOTER -->
+       <footer class="footer-container flex-column-center">
+           <p class="footer-header">
+               Made with <span>&lt;/&gt;</span> by Roma Bulani
+           </p>
+           <ul>
+               <li class="footer-item">
+                   <a href="https://github.com/romabulani" target="_blank">
+                       <i class="fa fa-github footer-icon fa-lg" aria-hidden="true"></i>
+                   </a>
+               </li>
+               <li class="footer-item">
+                   <a href="https://twitter.com/romabulani" target="_blank">
+                       <i class="fa fa-twitter footer-icon fa-lg" aria-hidden="true"></i>
+                   </a>
+               </li>
+               <li class="footer-item">
+                   <a href="https://www.linkedin.com/in/romabulani/" target="_blank">
+                       <i class="fa fa-linkedin footer-icon fa-lg" aria-hidden="true"></i>
+                   </a>
+               </li>
+           </ul>
+           <p class="copywright">
+               © 2022 | Bakin Lane
+           </p>
+       </footer>
+   </div>
 </body>
 </html>
