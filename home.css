@@ -96,14 +96,14 @@
 }
 
 @media only screen and (max-width : 768px) {
-    .hero-img{
+    .hero-img > img{
         height: 15rem;
         width: 15rem;
     }
 }
 
 @media only screen and (max-width : 640px) {
-    .hero-img{
+    .hero-img > img{
         height: 12rem;
         width: 12rem;
     }
