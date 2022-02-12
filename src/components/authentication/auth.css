@@ -7,7 +7,7 @@
 .container-auth{
     border-radius: 5px;
     box-shadow: var(--default-shadow);
-    height: 20rem;
+    height: fit-content;
     margin: 1rem;
     max-width: 30rem;
     padding: 1rem;
@@ -33,7 +33,7 @@
     width: 100%;
 }
 
-.btn-link-primary{
+.btn-link-primary, #terms-conditions{
     display: inline-block;
     margin: 0.5rem;
 }
