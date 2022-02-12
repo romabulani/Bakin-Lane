@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakin Lane | Cakes and Muffins </title>
+<link rel="stylesheet" href="https://muffinui.netlify.app/style.css">   
+<link rel="stylesheet" href="productlist.css">
+<script src="https://kit.fontawesome.com/c89017add5.js" crossorigin="anonymous"></script>
+<!-- added for icon in browser tab -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="pagewrapper">
+
+    <!-- HEADER NAVIGATION -->
+    <nav class="nav-container">
+        <div class="brand">
+            <img src="/src/images/logo.png" alt="muffin-logo" class="logo">
+            <a href="../../../index.html"  class="brand-name">Bakin Lane</a>
+            <a href="../../../index.html"  class="nav-item">Home</a>
+            <a href="./src/components/product/productlist.html" class="nav-active nav-item">Buy Now</a>
+        </div> 
+        <ul>
+            <div class="searchbar-container">
+                <button class="nav-search-button">
+                    <i class="fa fa-solid fa-search"></i>
+                </button>
+                <input type="text" placeholder="Type to search" class="nav-search-field">
+            </div>
+            <li class="nav-item nav-icon">
+                <a href="">
+                    <i class="fa fa-solid fa-search fa-lg nav-icon"></i>
+                </a>
+            </li>
+            <li class="nav-item nav-icon">
+                <a href="">
+                <i class="fa fa-solid fa-heart fa-lg nav-icon"></i>
+                </a>
+            </li>
+            <li class="nav-item nav-icon">
+                <a href="">
+                    <i class="fas fa-shopping-cart fa-lg nav-icon"></i>
+                </a>
+            </li>
+            <li class="nav-item nav-icon ">
+                <a href="./src/components/authentication/login.html">
+                    <i class="fa fa-solid fa-user fa-lg nav-icon"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- MIDDLE SECTION STARTS-->
+
+    <main class="filters-and-products">
+        <!-- FILTER -->
+        <section class="filters">
+            <div class="filter-header">
+                <span>FILTERS</span>
+                <a href="login.html" class="btn-link btn-link-primary">CLEAR</a>
+            </div>
+            <hr>
+            <div class="filter-sort">
+                <span>SORT</span>
+                <label class="gray-text small-text">
+                    <input type="radio" name="sort" id="highToLow" class="small-text">
+                    Price High to Low
+                </label>
+                <label class="gray-text small-text">
+                    <input type="radio" name="sort" id="lowToHigh" class="small-text">
+                    Price Low to High
+                </label>
+            </div>
+
+            <hr>
+
+            <div class="filter-items">
+                <span>ITEMS</span>
+                <label class="gray-text small-text">
+                    <input type="checkbox" name="items" id="item-cakes" class="small-text">
+                    Cakes
+                </label>
+                <label class="gray-text small-text">
+                    <input type="checkbox" name="items" id="item-muffins" class="small-text">
+                    Muffins
+                </label>
+            </div>
+
+            <hr>
+
+            <div class="filter-categories">
+                <span>CATEGORIES</span>
+                <label class="gray-text small-text">
+                    <input type="checkbox" name="categories" id="category-chocolate" class="small-text">
+                    Chocolate
+                </label>
+                <label class="gray-text small-text">
+                    <input type="checkbox" name="categories" id="category-vanilla" class="small-text">
+                    Vanilla
+                </label>
+                <label class="gray-text small-text">
+                    <input type="checkbox" name="categories" id="category-redvelvet" class="small-text">
+                    Red Velvet
+                </label>
+                <label class="gray-text small-text">
+                    <input type="checkbox" name="categories" id="category-birthdays" class="small-text">
+                    Birthdays
+                </label>
+                <label class="gray-text small-text">
+                    <input type="checkbox" name="categories" id="category-anniversaries" class="small-text">
+                    Anniversaries
+                </label>
+                <label class="gray-text small-text">
+                    <input type="checkbox" name="categories" id="category-themebased" class="small-text">
+                    Theme Based
+                </label>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <div class="flex-row-center">
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake1.webp" type="image/webp">
+                        <source srcset="../../images/cake1.jpg" type="image/jpg">
+                        <img src="../../images/cake1.jpg" alt="cake" class="card-img">
+                    </picture>
+                </div>
+                <div class="card-header">
+                    Unicorn Cake
+                </div>
+                <div class="card-title">
+                    Rs 1000
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg heart-wishlist"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <span class="card-badge">20% Off</span>
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake3.webp" type="image/webp">
+                        <source srcset="../../images/cake3.jpg" type="image/jpg">
+                        <img src="../../images/cake3.jpg" class="card-img" alt="cake">
+                    </picture>  
+                </div>
+                <div class="card-header">
+                    Belgian Muffin
+                </div>
+                <div class="card-title">
+                    Rs 200 / pc
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake2.webp" type="image/webp">
+                        <source srcset="../../images/cake2.jpg" type="image/jpg">
+                        <img src="../../images/cake2.jpg" class="card-img" alt="cake">
+                    </picture>              
+                </div>
+                <div class="card-header">
+                    Vanlate Cake
+                </div>
+                <div class="card-title">
+                    Rs 800
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg heart-wishlist"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake4.webp" type="image/webp">
+                        <source srcset="../../images/cake4.jpg" type="image/jpg">
+                        <img src="../../images/cake4.jpg" class="card-img" alt="cake">
+                    </picture> 
+                </div>
+                <div class="card-header">
+                    Red Velvet Muffin
+                </div>
+                <div class="card-title">
+                    Rs 150 / pc
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake1.webp" type="image/webp">
+                        <source srcset="../../images/cake1.jpg" type="image/jpg">
+                        <img src="../../images/cake1.jpg" alt="cake" class="card-img">
+                    </picture>
+                </div>
+                <div class="card-header">
+                    Unicorn Cake
+                </div>
+                <div class="card-title">
+                    Rs 1000
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg heart-wishlist"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <span class="card-badge">20% Off</span>
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake3.webp" type="image/webp">
+                        <source srcset="../../images/cake3.jpg" type="image/jpg">
+                        <img src="../../images/cake3.jpg" class="card-img" alt="cake">
+                    </picture>  
+                </div>
+                <div class="card-header">
+                    Belgian Muffin
+                </div>
+                <div class="card-title">
+                    Rs 200 / pc
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake2.webp" type="image/webp">
+                        <source srcset="../../images/cake2.jpg" type="image/jpg">
+                        <img src="../../images/cake2.jpg" class="card-img" alt="cake">
+                    </picture>              
+                </div>
+                <div class="card-header">
+                    Vanlate Cake
+                </div>
+                <div class="card-title">
+                    Rs 800
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg heart-wishlist"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake4.webp" type="image/webp">
+                        <source srcset="../../images/cake4.jpg" type="image/jpg">
+                        <img src="../../images/cake4.jpg" class="card-img" alt="cake">
+                    </picture> 
+                </div>
+                <div class="card-header">
+                    Red Velvet Muffin
+                </div>
+                <div class="card-title">
+                    Rs 150 / pc
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg"></i>
+                </div>
+            </div>
+            
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake1.webp" type="image/webp">
+                        <source srcset="../../images/cake1.jpg" type="image/jpg">
+                        <img src="../../images/cake1.jpg" alt="cake" class="card-img">
+                    </picture>
+                </div>
+                <div class="card-header">
+                    Unicorn Cake
+                </div>
+                <div class="card-title">
+                    Rs 1000
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg heart-wishlist"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <span class="card-badge">20% Off</span>
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake3.webp" type="image/webp">
+                        <source srcset="../../images/cake3.jpg" type="image/jpg">
+                        <img src="../../images/cake3.jpg" class="card-img" alt="cake">
+                    </picture>  
+                </div>
+                <div class="card-header">
+                    Belgian Muffin
+                </div>
+                <div class="card-title">
+                    Rs 200 / pc
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake2.webp" type="image/webp">
+                        <source srcset="../../images/cake2.jpg" type="image/jpg">
+                        <img src="../../images/cake2.jpg" class="card-img" alt="cake">
+                    </picture>              
+                </div>
+                <div class="card-header">
+                    Vanlate Cake
+                </div>
+                <div class="card-title">
+                    Rs 800
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg heart-wishlist"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake4.webp" type="image/webp">
+                        <source srcset="../../images/cake4.jpg" type="image/jpg">
+                        <img src="../../images/cake4.jpg" class="card-img" alt="cake">
+                    </picture> 
+                </div>
+                <div class="card-header">
+                    Red Velvet Muffin
+                </div>
+                <div class="card-title">
+                    Rs 150 / pc
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg"></i>
+                </div>
+            </div>
+            
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake1.webp" type="image/webp">
+                        <source srcset="../../images/cake1.jpg" type="image/jpg">
+                        <img src="../../images/cake1.jpg" alt="cake" class="card-img">
+                    </picture>
+                </div>
+                <div class="card-header">
+                    Unicorn Cake
+                </div>
+                <div class="card-title">
+                    Rs 1000
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg heart-wishlist"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <span class="card-badge">20% Off</span>
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake3.webp" type="image/webp">
+                        <source srcset="../../images/cake3.jpg" type="image/jpg">
+                        <img src="../../images/cake3.jpg" class="card-img" alt="cake">
+                    </picture>  
+                </div>
+                <div class="card-header">
+                    Belgian Muffin
+                </div>
+                <div class="card-title">
+                    Rs 200 / pc
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake2.webp" type="image/webp">
+                        <source srcset="../../images/cake2.jpg" type="image/jpg">
+                        <img src="../../images/cake2.jpg" class="card-img" alt="cake">
+                    </picture>              
+                </div>
+                <div class="card-header">
+                    Vanlate Cake
+                </div>
+                <div class="card-title">
+                    Rs 800
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg heart-wishlist"></i>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="../../images/webp/cake4.webp" type="image/webp">
+                        <source srcset="../../images/cake4.jpg" type="image/jpg">
+                        <img src="../../images/cake4.jpg" class="card-img" alt="cake">
+                    </picture> 
+                </div>
+                <div class="card-header">
+                    Red Velvet Muffin
+                </div>
+                <div class="card-title">
+                    Rs 150 / pc
+                </div>
+                <div class="card-content">
+                    4 <span><i class="fa fa-solid fa-star rating-star"></i></span> | 20
+                </div>
+                <div class="card-buttons">
+                    <span class="card-button">ADD TO CART</span>
+                    <i class="card-icon fa fa-heart fa-lg"></i>
+                </div>
+            </div>        
+        </div>
+    </main>
+
+    <!-- MIDDLE SECTION ENDS-->
+    
+    <!-- FOOTER -->
+    <footer class="footer-container flex-column-center">
+        <p class="footer-header">
+            Made with <span>&lt;/&gt;</span> by Roma Bulani
+        </p>
+        <ul>
+            <li class="footer-item">
+                <a href="https://github.com/romabulani" target="_blank">
+                    <i class="fa fa-github footer-icon fa-lg" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="https://twitter.com/romabulani" target="_blank">
+                    <i class="fa fa-twitter footer-icon fa-lg" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="https://www.linkedin.com/in/romabulani/" target="_blank">
+                    <i class="fa fa-linkedin footer-icon fa-lg" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="copywright">
+            © 2022 | Bakin Lane
+        </p>
+    </footer>
+</div>
+</body>
+</html>

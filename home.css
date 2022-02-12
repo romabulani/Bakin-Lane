@@ -76,6 +76,10 @@
     font-size: 1.5rem;
 }
 
+.card-icon.fa-heart{
+    color: var(--disabled-color);
+}
+
 .card-text-overlay > .card-img-container > .card-header{
     top: 50%;
 }
