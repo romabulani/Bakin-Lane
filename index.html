@@ -35,24 +35,24 @@
                     </button>
                     <input type="text" placeholder="Type to search" class="nav-search-field">
                </div>
-               <li class="nav-item nav-icon ">
+               <li class="nav-item nav-icon">
                     <a href="">
-                        <i class="fa fa-solid fa-search nav-icon"></i>
+                        <i class="fa fa-solid fa-search fa-lg nav-icon"></i>
                     </a>
                 </li>
-               <li class="nav-item nav-icon ">
+               <li class="nav-item nav-icon">
                    <a href="">
-                    <i class="fa fa-solid fa-heart nav-icon"></i>
+                    <i class="fa fa-solid fa-heart fa-lg nav-icon"></i>
                    </a>
                </li>
                <li class="nav-item nav-icon">
                     <a href="">
-                        <i class="fas fa-shopping-cart nav-icon"></i>
+                        <i class="fas fa-shopping-cart fa-lg nav-icon"></i>
                     </a>
                 </li>
                 <li class="nav-item nav-icon ">
-                    <a href="">
-                     <i class="fa fa-solid fa-user nav-icon"></i>
+                    <a href="./src/components/authentication/login.html">
+                     <i class="fa fa-solid fa-user fa-lg nav-icon"></i>
                     </a>
                 </li>
            </ul>
@@ -78,8 +78,12 @@
            <h3 class="align-center heading3">Trending</h3>
            <div class="cards">
             <div class="card card-default zoom">
-                <div class="card-img ">
-                    <img src="/src/images/cake1.jpg" class="img-responsive" alt="cake">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="src/images/webp/cake1.webp" type="image/webp">
+                        <source srcset="src/images/cake1.jpg" type="image/jpg">
+                        <img src="/src/images/cake1.jpg" alt="cake" class="card-img">
+                    </picture>
                 </div>
                 <div class="card-header">
                     Unicorn Cake
@@ -95,8 +99,12 @@
 
             <div class="card card-default zoom">
                 <span class="card-badge">20% Off</span>
-                <div class="card-img ">
-                    <img src="/src/images/cake3.jpg" class="img-responsive" alt="cake">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="src/images/webp/cake3.webp" type="image/webp">
+                        <source srcset="src/images/cake3.jpg" type="image/jpg">
+                        <img src="/src/images/cake3.jpg" class="card-img" alt="cake">
+                    </picture>  
                 </div>
                 <div class="card-header">
                    Belgian Muffin
@@ -111,8 +119,12 @@
             </div>
 
             <div class="card card-default zoom">
-                <div class="card-img">
-                    <img src="/src/images/cake2.jpg" class="img-responsive" alt="cake">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="src/images/webp/cake2.webp" type="image/webp">
+                        <source srcset="src/images/cake2.jpg" type="image/jpg">
+                        <img src="/src/images/cake2.jpg" class="card-img" alt="cake">
+                    </picture>              
                 </div>
                 <div class="card-header">
                     Vanlate Cake
@@ -127,8 +139,12 @@
             </div>
 
             <div class="card card-default zoom">
-                <div class="card-img ">
-                    <img src="/src/images/cake4.jpg" class="img-responsive" alt="cake">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="src/images/webp/cake4.webp" type="image/webp">
+                        <source srcset="src/images/cake4.jpg" type="image/jpg">
+                        <img src="/src/images/cake4.jpg" class="card-img" alt="cake">
+                    </picture> 
                 </div>
                 <div class="card-header">
                     Red Velvet Muffin
@@ -148,8 +164,12 @@
         <h3 class="align-center heading3">Featured Categories</h3>
         <div class="cards">
             <div class="card card-text-overlay zoom">    
-                <div class="card-img">
-                    <img src="/src/images/festivecake1.jpg" alt="cake">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="src/images/webp/festivecake1.webp" type="image/webp">
+                        <source srcset="src/images/festivecake1.jpg" type="image/jpg">
+                        <img src="/src/images/festivecake1.jpg" alt="cake" class="card-img">
+                    </picture> 
                     <div class="card-header">
                         Festive
                     </div>
@@ -157,8 +177,12 @@
             </div>
 
             <div class="card card-text-overlay zoom">    
-                <div class="card-img">
-                    <img src="/src/images/themecake1.jpg" alt="cake">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="src/images/webp/themecake1.webp" type="image/webp">
+                        <source srcset="src/images/themecake1.jpg" type="image/jpg">
+                        <img src="/src/images/themecake1.jpg" alt="cake" class="card-img">
+                    </picture>
                     <div class="card-header">
                         Theme
                     </div>
@@ -166,8 +190,12 @@
             </div>
 
             <div class="card card-text-overlay zoom">    
-                <div class="card-img">
-                    <img src="/src/images/occasioncake1.jpg" alt="cake">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="src/images/webp/occasioncake1.webp" type="image/webp">
+                        <source srcset="src/images/occasioncake1.jpg" type="image/jpg">
+                        <img src="/src/images/occasioncake1.jpg" alt="cake" class="card-img">
+                    </picture>
                     <div class="card-header">
                         Occasion
                     </div>
@@ -175,8 +203,12 @@
             </div>
 
             <div class="card card-text-overlay zoom">    
-                <div class="card-img">
-                    <img src="/src/images/flavorcake1.jpg" alt="cake">
+                <div class="card-img-container">
+                    <picture class="card-img">
+                        <source srcset="src/images/webp/flavorcake1.webp" type="image/webp">
+                        <source srcset="src/images/flavorcake1.jpg" type="image/jpg">
+                        <img src="/src/images/flavorcake1.jpg" alt="cake" class="card-img">
+                    </picture>
                     <div class="card-header">
                         Flavors
                     </div>
