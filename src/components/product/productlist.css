@@ -1,0 +1,75 @@
+@import url(../../shared/shared.css);
+@import url(../../shared/footer.css);
+@import url(../../shared/nav.css);
+@import url(../../shared/reset.css);
+@import url(../../shared/globalbakin.css);
+@import url(../../../home.css);
+
+.filters-and-products{
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+}
+
+.filters{
+    height: calc(100vh - 2rem);
+    margin: 1rem;
+    min-width: 10rem; 
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+}
+
+.filter-header{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+
+.filter-sort, .filter-items, .filter-categories{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    row-gap: 0.5rem;
+}
+
+.small-text{
+    font-size: 0.875rem;
+}
+
+.rating-star{
+    color: var(--star-color);
+}
+
+.flex-row-center{
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    padding: 4rem;
+    row-gap: 2rem;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    box-shadow: none;
+}
+
+.card > .card-content{
+    margin-left: 0.5rem;
+}
+
+.card-icon.heart-wishlist{
+    color: var(--error-color);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px){
+    .flex-row-center{
+        column-gap: 1rem;
+        padding: 0.5rem;
+    }
+}
