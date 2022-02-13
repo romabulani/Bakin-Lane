@@ -62,6 +62,10 @@
     margin-left: 0.5rem;
 }
 
+.card:hover{
+    box-shadow: var(--default-shadow);
+}
+
 .card-icon.heart-wishlist{
     color: var(--error-color);
 }
@@ -69,11 +73,19 @@
 /* Media Queries */
 @media only screen and (max-width: 768px){
     .flex-row-center{
-        column-gap: 1rem;
-        padding: 0.5rem;
+        gap: 3px;
+        padding: 3px;
     }
 
     .filters{
         min-width: 7rem;
+    }
+
+    .card:hover{
+        box-shadow: unset;
+    }
+
+    .card{
+        border: 1px solid var(--gray-color);
     }
 }
