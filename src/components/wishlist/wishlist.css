@@ -1,0 +1,31 @@
+@import url(../../shared/shared.css);
+@import url(../../shared/footer.css);
+@import url(../../shared/nav.css);
+@import url(../../shared/reset.css);
+@import url(../../shared/globalbakin.css);
+@import url(../../components/product/productlist.css);
+
+.btn-close:hover{
+    background-color: unset;
+    cursor: pointer;
+}
+
+.card{
+    border: 1px solid var(--shadow-color);
+}
+
+.card:hover{
+    box-shadow: unset;
+}
+
+.card-button{
+    cursor: pointer;
+}
+
+.wishlist-empty-container.flex-column-center{
+    row-gap: 1rem;
+}
+
+.wishlist-empty-container{
+    display: none;
+}

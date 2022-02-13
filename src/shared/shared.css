@@ -4,6 +4,10 @@
     min-height: 100vh;
 }
 
+.pagewrapper > main{
+    flex-grow: 1;
+}
+
 .flex-column-center{
     align-items: center;
     display: flex;
