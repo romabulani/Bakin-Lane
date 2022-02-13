@@ -14,6 +14,10 @@
     border: 1px solid var(--shadow-color);
 }
 
+.card:hover{
+    box-shadow: unset;
+}
+
 .card-button{
     cursor: pointer;
 }
