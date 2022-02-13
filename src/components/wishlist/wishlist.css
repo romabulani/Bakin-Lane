@@ -6,7 +6,6 @@
 @import url(../../components/product/productlist.css);
 
 .btn-close:hover{
-    background-color: unset;
     cursor: pointer;
 }
 
