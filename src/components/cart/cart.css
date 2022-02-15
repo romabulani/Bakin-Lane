@@ -1,0 +1,132 @@
+@import url(../../shared/shared.css);
+@import url(../../shared/footer.css);
+@import url(../../shared/nav.css);
+@import url(../../shared/reset.css);
+@import url(../../shared/globalbakin.css);
+
+.cart-container{
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.cart-items{
+    border-right: 1px solid var(--gray-color);
+    padding: 1rem;
+    row-gap: 2rem;
+}
+
+.card-horizontal-wide{
+    border-radius: 5px;
+    border: 1px solid var(--gray-color);
+    display: flex;
+    height: 10.8rem;
+    margin: 0rem 1rem;
+    position: relative;
+    width: 21rem;
+}
+
+.card-horizontal-wide > .card-img-container {
+    height: 9.5rem;
+    width: 8rem;
+    margin: 10px;
+}
+
+.card-horizontal-wide > .card-img-container > img{
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.card-horizontal-wide > .card-content > .card-header{
+    padding-left: 0;
+}
+
+.card-horizontal-wide > .card-content > .card-title{
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.card-buttons{
+    padding-left: 0;
+}
+
+.card-quantity-buttons > button, .card-quantity-buttons > span{
+    padding: 3px 6px;
+}
+
+.cart-items-and-price{
+    width: 100%;
+    flex-wrap: wrap;    
+}
+
+.cart-price{
+    align-self: flex-start;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.price-row{
+    display: flex;
+    row-gap: 1rem;
+} 
+
+.price-row > div{
+    display: inline;
+    width: 20%;
+    padding: 5px 0px;
+}
+
+.price-row > .display-left{
+    width: 20ch;
+}
+
+.display-right{
+   align-self: flex-end;
+   flex-grow: 1;
+   padding-left: max(2rem, 2rem);
+}
+
+.btn-primary{
+    margin-left: 0;
+    width: 100%;
+}
+
+.success-text{
+    color: var(--success-color);
+}
+
+.empty-cart-icon{
+    color: var(--disabled-color);
+    padding: 2rem;
+}
+
+.cart-empty-container{
+    display: none;
+}
+
+.cart-empty-container > .btn{
+    height: 2.5rem;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px){
+    .cart-container{
+        flex-direction: column; 
+    }
+
+    .cart-items{
+        border-right: 0px;
+    }
+}

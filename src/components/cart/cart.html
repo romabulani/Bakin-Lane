@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakin Lane | My Cart </title>
+<link rel="stylesheet" href="https://muffinui.netlify.app/style.css">   
+<link rel="stylesheet" href="cart.css">
+
+<!-- added for icon in browser tab -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="pagewrapper">
+
+    <!-- HEADER NAVIGATION -->
+    <nav class="nav-container">
+        <div class="brand">
+            <img src="/src/images/logo.png" alt="muffin-logo" class="logo">
+            <a href="../../../index.html"  class="brand-name">Bakin Lane</a>
+            <a href="../../../index.html"  class="nav-item">Home</a>
+            <a href="../product/productlist.html" class="nav-item">Buy Now</a>
+        </div> 
+        <ul>
+            <div class="searchbar-container">
+                <button class="nav-search-button">
+                    <i class="fa fa-solid fa-search"></i>
+                </button>
+                <input type="text" placeholder="Type to search" class="nav-search-field">
+            </div>
+            <li class="nav-item nav-icon">
+                <a href="#" aria-label="search">
+                    <i class="fa fa-solid fa-search fa-lg nav-icon"></i>
+                </a>
+            </li>
+            <li class="nav-item nav-icon">
+                <a href="../wishlist/wishlist.html" aria-label="wishlist">
+                     <div class="badge">
+                         <i class="fa fa-solid fa-heart fa-lg nav-icon"></i>
+                         <span class="badge-icon badge-number badge-right badge-lg">3</span>
+                     </div>
+                 </a>
+            </li>
+            <li class="nav-item nav-icon">
+                 <a href="../cart/cart.html" aria-label="cart">
+                     <div class="badge">
+                         <i class="fas fa-shopping-cart fa-lg nav-icon nav-active"></i>
+                         <span class="badge-icon badge-number badge-right badge-lg">2</span>
+                     </div>         
+                 </a>
+            </li>
+            <li class="nav-item nav-icon">
+                <a href="./src/components/authentication/login.html" aria-label="user">
+                    <i class="fa fa-solid fa-user fa-lg nav-icon"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- MIDDLE SECTION STARTS-->
+    <main class="cart-container flex-column-center">
+        <div class="cart-header heading4">
+            MY CART
+        </div>
+        <div class="cart-header heading5">
+            <span class="success-text">CART</span>------- ADDRESS ------- PAYMENT
+        </div>
+        
+        <!-- PRODUCTS -->
+        <div class="cart-items-and-price flex-row-center">
+            <div class="cart-items flex-column-center">
+                <div class="card-horizontal-wide">
+                    <img class="btn-close" src="../../images/close-button.svg" alt="Close Button">
+                    <div class="card-img-container">
+                        <img src="../../images/cake1.png" class="card-img-horizontal" alt="cake">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            Unicorn Cake
+                        </div>
+                        <div class="card-title">
+                            Rs 900
+                        </div>
+                        <div class="card-quantity-buttons">
+                            <button class="button-plus">
+                                +
+                            </button>
+                            <span>
+                                1
+                            </span>
+                            <button class="button-minus">
+                                -
+                            </button>
+                        </div>
+                        <div class="card-buttons">
+                            <span class="card-button">MOVE TO WISHLIST</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card-horizontal-wide">
+                    <img class="btn-close" src="../../images/close-button.svg" alt="Close Button">
+                    <div class="card-img-container">
+                        <img src="../../images/cake4.png" class="card-img-horizontal" alt="cake">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            Red Velvet Muffin
+                        </div>
+                        <div class="card-title">
+                            Rs 150 / pc
+                        </div>
+                        <div class="card-quantity-buttons">
+                            <button class="button-plus">
+                                +
+                            </button>
+                            <span>
+                                2
+                            </span>
+                            <button class="button-minus">
+                                -
+                            </button>
+                        </div>
+                        <div class="card-buttons">
+                            <span class="card-button">MOVE TO WISHLIST</span>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="cart-price">
+                <h5 class="heading5 gray-text">PRICE DETAILS : (2 Items)</h5>
+                <div class="price-row">
+                    <div class="display-left">Total MRP</div>
+                    <div class="display-right">Rs 1200</div>
+                </div>
+                <div class="price-row">
+                    <div class="display-left">Discount</div>
+                    <div class="display-right">Rs 0</div>
+                </div>
+                <div class="price-row">
+                    <div class="display-left">Delivery Charges</div>
+                    <div class="display-right">Free</div>
+                </div>
+                <div class="price-row">
+                    <div class="display-left">TOTAL AMOUNT</div>
+                    <div class="display-right">Rs 1200</div>
+                </div>
+                <button class="btn btn-primary">PLACE ORDER</button>
+                
+            </div>
+        </div>
+
+        <div class="cart-empty-container flex-column-center">
+            <h4>Hey, It feels as light as air!</h4>
+            <p>There is nothing in the cart. Lets add some mouth watering items from the wishlist.</p>
+            <div>
+                <i class="fa fa-shopping-cart fa-5x empty-cart-icon" aria-hidden="true"></i>
+            </div>
+            <button class="btn btn-outline-primary" onclick="location.href = '../wishlist/wishlist.html'">ADD ITEMS FROM WISHLIST</button>
+        </div>
+    </main>
+
+    <!-- MIDDLE SECTION ENDS-->
+    
+    <!-- FOOTER -->
+    <footer class="footer-container flex-column-center">
+        <p class="footer-header">
+            Made with <span>&lt;/&gt;</span> by Roma Bulani
+        </p>
+        <ul>
+            <li class="footer-item">
+                <a href="https://github.com/romabulani" target="_blank" aria-label="github" rel="noreferrer">
+                    <i class="fa fa-github footer-icon fa-lg" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="https://twitter.com/romabulani" target="_blank" aria-label="twitter" rel="noreferrer">
+                    <i class="fa fa-twitter footer-icon fa-lg" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="https://www.linkedin.com/in/romabulani/" target="_blank" aria-label="linkedin" rel="noreferrer">
+                    <i class="fa fa-linkedin footer-icon fa-lg" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="copywright">
+            © 2022 | Bakin Lane
+        </p>
+    </footer>
+</div>
+</body>
+<script src="https://kit.fontawesome.com/c89017add5.js" crossorigin="anonymous"></script>
+<script src="cart.js"></script>
+</html>
