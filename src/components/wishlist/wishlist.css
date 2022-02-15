@@ -5,21 +5,12 @@
 @import url(../../shared/globalbakin.css);
 @import url(../../components/product/productlist.css);
 
-.btn-close:hover{
-    background-color: unset;
-    cursor: pointer;
-}
-
 .card{
     border: 1px solid var(--shadow-color);
 }
 
 .card:hover{
     box-shadow: unset;
-}
-
-.card-button{
-    cursor: pointer;
 }
 
 .wishlist-empty-container.flex-column-center{

@@ -1,6 +1,6 @@
 :root{
     --star-color: #FDCC0D;
-    --gray-color: #939393;
+    --gray-color: gray;
 }
 
 .pagewrapper{
@@ -27,15 +27,4 @@
 
 .border-box{
     box-sizing: border-box;
-}
-
-.fa-times-circle.btn-close-card{
-    background: white;
-    border-radius: 60%;
-    color: var(--gray-color);
-    cursor: pointer;
-    padding: 0px;
-    position: absolute;
-    right: 0.625rem;
-    top: 8px;
 }

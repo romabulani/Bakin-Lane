@@ -20,3 +20,8 @@
     display: flex;
     justify-content: center;
 }
+
+.badge-number{
+    background-color: var(--error-color);
+    right: -0.625rem;
+}
