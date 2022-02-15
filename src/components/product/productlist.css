@@ -41,21 +41,17 @@
     color: var(--star-color);
 }
 
-.flex-row-center{
+.cards{
     column-gap: 2rem;
     flex-wrap: wrap;
-    padding: 4rem;
+    padding: 2rem;
     row-gap: 2rem;
-}
-
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .card{
     box-shadow: none;
+    margin: 2rem;
 }
 
 .card > .card-content{
