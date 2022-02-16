@@ -6,7 +6,7 @@
 
 .hero-container {
   align-items: center;
-  background-image: url("/src/images/bgheroimg.png");
+  background-image: url("/src/images/bgheroimg.webp");
   display: flex;
   flex-grow: 1;
   height: fit-content;
