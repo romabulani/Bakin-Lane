@@ -6,7 +6,7 @@
 
 .hero-container {
   align-items: center;
-  background-image: url("/src/images/bgheroimg.png");
+  background-image: url("/src/images/bgheroimg.webp");
   display: flex;
   flex-grow: 1;
   height: fit-content;
@@ -24,11 +24,21 @@
   row-gap: 1rem;
 }
 
+.hero-img{
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 18rem;
+  padding-bottom: 1rem;
+  width: 18rem;
+}
+
 .hero-img > img {
   aspect-ratio: 1/1;
   border-radius: 50%;
   border: 8px solid var(--light-color);
-  width: 20rem;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .container-main {
@@ -80,6 +90,7 @@
 .card-img-container {
   height: 10rem;
   position: relative;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   width: 100%;
@@ -90,6 +101,15 @@
   width: 100%;
   object-fit: cover;
 >>>>>>> Stashed changes
+=======
+  width: 100%;
+}
+
+.card-img-container > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+>>>>>>> 0272a2b67d89101d2d2120089e431343121fabdc
 }
 
 .card-img-container > .card-header {
@@ -121,34 +141,23 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .hero-img > img {
+  .hero-img {
     height: 15rem;
     width: 15rem;
   }
 }
 
 @media only screen and (max-width: 640px) {
-  .hero-img > img {
-    height: 12rem;
-    width: 12rem;
-  }
-
-  .heading2 {
-    font-size: 1.5rem;
-  }
-
-  .heading4 {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
   .hero-container {
+    justify-content: center;
     flex-direction: column;
   }
 
   .hero-img {
-    align-self: center;
     order: -1;
+  }
+
+  .hero-img > img{
+    align-self: center;
   }
 }
