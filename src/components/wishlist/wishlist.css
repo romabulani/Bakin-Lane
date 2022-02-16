@@ -5,6 +5,10 @@
 @import url(../../shared/globalbakin.css);
 @import url(../../components/product/productlist.css);
 
+.flex-row-center{
+  flex-wrap: wrap;
+}
+
 .card {
   border: 1px solid var(--shadow-color);
 }
