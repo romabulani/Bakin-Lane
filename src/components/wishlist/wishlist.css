@@ -5,18 +5,18 @@
 @import url(../../shared/globalbakin.css);
 @import url(../../components/product/productlist.css);
 
-.card{
-    border: 1px solid var(--shadow-color);
+.card {
+  border: 1px solid var(--shadow-color);
 }
 
-.card:hover{
-    box-shadow: unset;
+.card:hover {
+  box-shadow: unset;
 }
 
-.wishlist-empty-container.flex-column-center{
-    row-gap: 1rem;
+.wishlist-empty-container.flex-column-center {
+  row-gap: 1rem;
 }
 
-.wishlist-empty-container{
-    display: none;
+.wishlist-empty-container {
+  display: none;
 }

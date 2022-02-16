@@ -5,83 +5,85 @@
 @import url(../../shared/globalbakin.css);
 @import url(../../../home.css);
 
-.filters-and-products{
-    display: flex;
-    flex-grow: 1;
-    position: relative;
+.filters-and-products {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
 }
 
-.filters{
-    height: calc(100vh - 2rem);
-    margin: 1rem;
-    min-width: 12rem; 
-    overflow-y: auto;
-    position: sticky;
-    top: 0;
+.filters {
+  height: calc(100vh - 2rem);
+  margin: 1rem;
+  min-width: 12rem;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
 }
 
-.filter-header{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 5px;
+.filter-header {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5px;
 }
 
-.filter-sort, .filter-items, .filter-categories{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    row-gap: 0.5rem;
+.filter-sort,
+.filter-items,
+.filter-categories {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  row-gap: 0.5rem;
 }
 
-.small-text{
-    font-size: 0.875rem;
+.small-text {
+  font-size: 0.875rem;
 }
 
-.rating-star{
-    color: var(--star-color);
+.rating-star {
+  color: var(--star-color);
 }
 
-.cards{
-    column-gap: 2rem;
-    flex-wrap: wrap;
-    padding: 2rem;
-    row-gap: 2rem;
-    justify-content: flex-start;
+.cards {
+  column-gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  row-gap: 2rem;
+  justify-content: flex-start;
 }
 
-.card{
-    box-shadow: none;
-    margin: 2rem;
+.card {
+  box-shadow: none;
+  margin: 2rem;
 }
 
-.card > .card-content{
-    margin-left: 0.5rem;
+.card > .card-content {
+  margin-left: 0.5rem;
 }
 
-.card:hover{
-    box-shadow: var(--default-shadow);
+.card:hover {
+  box-shadow: var(--default-shadow);
 }
 
-.card-icon.heart-wishlist{
-    color: var(--error-color);
+.card-icon.heart-wishlist {
+  color: var(--error-color);
 }
 
 /* Media Queries */
-@media only screen and (max-width: 768px){
-    .flex-row-center{
-        gap: 3px;
-        padding: 3px;
-    }
+@media only screen and (max-width: 768px) {
+  .flex-row-center {
+    gap: 3px;
+    padding: 3px;
+  }
 
-    .filters{
-        min-width: 7rem;
-    }
+  .filters {
+    min-width: 7rem;
+  }
 
-    .card:hover{
-        box-shadow: unset;
-    }
+  .card:hover {
+    box-shadow: unset;
+  }
 
-    .card{
-        border: 1px solid var(--gray-color);
-    }
+  .card {
+    border: 1px solid var(--gray-color);
+  }
 }
