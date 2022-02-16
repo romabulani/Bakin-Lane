@@ -46,14 +46,14 @@
 .cards {
   column-gap: 2rem;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 2rem;
   row-gap: 2rem;
-  justify-content: flex-start;
 }
 
 .card {
   box-shadow: none;
-  margin: 2rem;
+  margin: 0.5rem;
 }
 
 .card > .card-content {
@@ -62,6 +62,10 @@
 
 .card:hover {
   box-shadow: var(--default-shadow);
+}
+
+.card-button{
+  margin: 0.5rem 0;
 }
 
 .card-icon.heart-wishlist {
@@ -80,9 +84,9 @@
   }
 
   .cards{
-      column-gap: 0px;
-      padding: 4px;
-      row-gap: 1rem;
+    column-gap: 0px;
+    padding: 4px;
+    row-gap: 1rem;
   }
 
   .card:hover {

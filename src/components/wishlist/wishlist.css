@@ -9,6 +9,10 @@
   flex-wrap: wrap;
 }
 
+.wishlist-cards-container{
+  padding: 2rem;
+}
+
 .card {
   border: 1px solid var(--shadow-color);
 }
@@ -17,7 +21,12 @@
   box-shadow: unset;
 }
 
+.card-button{
+  width: 100%;
+}
+
 .wishlist-empty-container.flex-column-center {
+  padding: 2rem;
   row-gap: 1rem;
 }
 

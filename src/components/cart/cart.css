@@ -3,6 +3,7 @@
 @import url(../../shared/nav.css);
 @import url(../../shared/reset.css);
 @import url(../../shared/globalbakin.css);
+@import url(../../../home.css);
 
 .cart-container {
   gap: 2rem;
@@ -59,6 +60,12 @@
   padding-left: 0;
 }
 
+.card-button{
+  padding: 6px;
+  margin: 0.5rem 0rem;
+  width: 100%;
+}
+
 .card-quantity-buttons > button,
 .card-quantity-buttons > span {
   padding: 3px 6px;
@@ -97,6 +104,7 @@
 }
 
 .btn-primary {
+  height: 2rem;
   margin-left: 0;
   width: 100%;
 }
