@@ -90,9 +90,6 @@
 .card-img-container {
   height: 10rem;
   position: relative;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
   width: 100%;
 }
 
@@ -100,16 +97,13 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
->>>>>>> Stashed changes
-=======
   width: 100%;
 }
 
-.card-img-container > img{
+.card-img-container > .card-img{
   height: 100%;
   width: 100%;
   object-fit: cover;
->>>>>>> 0272a2b67d89101d2d2120089e431343121fabdc
 }
 
 .card-img-container > .card-header {
