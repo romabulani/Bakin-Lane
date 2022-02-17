@@ -26,7 +26,8 @@
   padding-bottom: 5px;
 }
 
-.filter-sort,
+.filter-price,
+.filter-rating,
 .filter-items,
 .filter-categories {
   display: flex;
