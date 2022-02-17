@@ -75,6 +75,10 @@
   font-weight: 600;
 }
 
+.nav-icon-active {
+  color: var(--primary-color);
+}
+
 .searchbar-container {
   background-color: var(--bg-grey);
   border-radius: 5px;
