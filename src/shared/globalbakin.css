@@ -1,6 +1,6 @@
 :root {
   --star-color: #fdcc0d;
-  --gray-color: #646464;
+  --gray-color: gray;
 }
 
 .pagewrapper {

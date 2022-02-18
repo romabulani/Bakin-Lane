@@ -40,6 +40,10 @@
   font-size: 0.875rem;
 }
 
+.gray-text{
+  color: #646464;
+}
+
 .rating-star {
   color: var(--star-color);
 }
