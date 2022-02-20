@@ -72,7 +72,7 @@ Its another feature related to Authentication. It helps the user to reset the pa
 The search functionality is present on all the pages in the navbar which helps the user to find the items at the tip of the fingers.
 
 ## Future Enhancements
-- Address Managemen
+- Address Management
 - Checkout
 - Single Product Page
 - Loading & Alerts
