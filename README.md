@@ -17,7 +17,7 @@ For making the screens, below techstak is used, in future, the project will be m
 - WebP format of images is used in the Bakin Lane which ensure fast loading and less render blocking.
 - For CSS, alphabetical ordering of the properties is followed which helps in easy debugging.
 - Use of reponsive units and media queries to make it Mobile Responsive as much as possible.
-- The units like aria-label and rel are added in anchor tags which increase the accessibility.
+- The properties like aria-label and rel are added in anchor tags which increase the accessibility.
 
 Below is the screenshot depicting the performance and best practices
 
